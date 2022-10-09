@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    //Open Website Button
+    <com.google.android.material.textfield.TextInputEditText
+        android:id = "@+id/website_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/edittext_uri"
+       />
+
+    <Button
+        android:id="@+id/open_website_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/button_uri"
+        android:layout_marginBottom = "24dp"
+        android:onClick="openWebsite"
+        />
+
+//Open Location Button
+    <com.google.android.material.textfield.TextInputEditText
+        android:id = "@+id/location_Edittext"
+        android:text = "@string/edittext_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <Button
+        android:id="@+id/open_location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/button_loc"
+        android:onClick="openLocation"
+        />
+
+
+    //Share This Button
+    <com.google.android.material.textfield.TextInputEditText
+        android:id = "@+id/share_edittext"
+        android:text = "@string/edittext_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <Button
+        android:id="@+id/share_text_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:onClick="shareText"
+        android:text="@string/button_share" />
+
+
+    //Launch Camera Button
+    <Button
+        android:id="@+id/launch_camera_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/button_camera"
+        android:onClick = "openCamera"/>
+
+
+</LinearLayout>
